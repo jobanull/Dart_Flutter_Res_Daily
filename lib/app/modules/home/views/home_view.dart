@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:testing/app/modules/template/views/template_view.dart';
+import 'package:testing/app/modules/template/views/template1_view.dart';
 
 import '../controllers/home_controller.dart';
 
