@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:testing/app/modules/template/views/template_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -9,14 +10,27 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView'),
+        title: const Text('Dialy Application'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: Column(
+        children: [
+          const Center(
+            child: Text(
+              'My Internal Template',
+              style: TextStyle(fontSize: 20),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(TemplateView());
+            },
+            child: const Text(
+              "Template 1",
+            ),
+          ),
+        ],
       ),
     );
   }
