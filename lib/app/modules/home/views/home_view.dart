@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:testing/app/modules/home/views/widget_and_column.dart';
 import 'package:testing/app/modules/template/views/template1_view.dart';
 
 import '../controllers/home_controller.dart';
@@ -28,6 +29,14 @@ class HomeView extends GetView<HomeController> {
             },
             child: const Text(
               "Template 1",
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(WidgetAndColumn());
+            },
+            child: const Text(
+              "Widget And Column",
             ),
           ),
         ],
