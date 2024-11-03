@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:testing/app/modules/home/views/widget_and_column.dart';
-import 'package:testing/app/modules/template/views/template1_view.dart';
 
 import '../controllers/home_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class TextStyles extends GetView<HomeController> {
+  const TextStyles({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
