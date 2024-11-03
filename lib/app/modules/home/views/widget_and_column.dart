@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:testing/app/modules/template/views/template1_view.dart';
 
 import '../controllers/home_controller.dart';
 
 class WidgetAndColumn extends GetView<HomeController> {
+  const WidgetAndColumn({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +14,7 @@ class WidgetAndColumn extends GetView<HomeController> {
         title: const Text('Widget And Column'),
         centerTitle: true,
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, 
+      body: const Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, 
          children: <Widget>[
           Text("Text 1"),
           Text("Text 2"),
