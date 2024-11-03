@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:testing/app/modules/home/bindings/home_binding.dart';
 import 'package:testing/app/modules/home/views/home_view.dart';
 import 'package:testing/app/modules/template/bindings/template_binding.dart';
-import 'package:testing/app/modules/template/views/template_view.dart';
+import 'package:testing/app/modules/template/views/template1_view.dart';
 
 part 'app_routes.dart';
 
