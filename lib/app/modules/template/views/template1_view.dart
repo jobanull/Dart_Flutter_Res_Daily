@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -9,11 +11,11 @@ class TemplateView extends GetView<TemplateController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Template 1"),
+        title: const Text("Template 1"),
         centerTitle: true,
       ),
       body: Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Stack(
           children: [
             Container(
@@ -27,7 +29,7 @@ class TemplateView extends GetView<TemplateController> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -38,17 +40,17 @@ class TemplateView extends GetView<TemplateController> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text(
+                        const Text(
                           "Title",
                           style: TextStyle(fontSize: 25),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
-                        Text("Description"),
+                        const Text("Description"),
                         ElevatedButton(
-                            onPressed: () {}, child: Text("Next Page")),
+                            onPressed: () {}, child: const Text("Next Page")),
                       ],
                     ),
                   ),
@@ -62,10 +64,12 @@ class TemplateView extends GetView<TemplateController> {
   }
 
   BoxDecoration myBorder = BoxDecoration(
-    borderRadius: BorderRadius.all(Radius.circular(20)),
+    borderRadius: const BorderRadius.all(Radius.circular(20)),
     border: Border.all(
       color: Colors.black,
       width: 1.0,
     ),
   );
+
+  TemplateView({super.key});
 }

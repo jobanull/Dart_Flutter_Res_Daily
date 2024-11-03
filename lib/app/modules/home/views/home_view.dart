@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:testing/app/modules/home/views/text_styles.dart';
 import 'package:testing/app/modules/home/views/widget_and_column.dart';
 import 'package:testing/app/modules/template/views/template1_view.dart';
 
@@ -37,6 +38,14 @@ class HomeView extends GetView<HomeController> {
             },
             child: const Text(
               "Widget And Column",
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(TextStyles());
+            },
+            child: const Text(
+              "Text Styles",
             ),
           ),
         ],
